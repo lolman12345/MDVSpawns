@@ -1,0 +1,60 @@
+# ==========================================================
+# MDVSpawns 1.0.0
+# Sistema propio de RandomSpawns para MythicMobs.
+# ==========================================================
+settings:
+  enabled: true
+  debug: false
+
+  # Cada cuantos ticks intenta spawnear. 20 ticks = 1 segundo.
+  tick-interval: 80
+
+  # Intentos de spawn por jugador en cada ciclo.
+  attempts-per-player: 2
+
+  # Limite total de mobs MDVSpawns cargados en el servidor.
+  global-limit: 180
+
+  # Limite de mobs MDVSpawns alrededor de cada jugador.
+  per-player-limit: 15
+  per-player-count-radius: 96
+
+  # Limite de mobs MDVSpawns por chunk.
+  per-chunk-limit: 3
+
+  # Distancias globales si el spawner no las sobreescribe.
+  min-distance-from-player: 36
+  max-distance-from-player: 72
+  vertical-range: 20
+
+  # No spawnear si el punto elegido queda cerca de cualquier jugador.
+  avoid-any-player-min-distance: 32
+
+  # Intentos para buscar una ubicacion valida por spawn.
+  location-attempts: 24
+
+  # Solo intentar spawnear alrededor de jugadores en estos modos.
+  allowed-gamemodes:
+    - SURVIVAL
+    - ADVENTURE
+
+  # Si el mob queda lejos de todos los jugadores, se borra despues de cierto tiempo.
+  despawn-enabled: true
+  despawn-distance: 128
+  despawn-after-seconds: 300
+
+  # Limpieza interna de entidades invalidas.
+  cleanup-interval: 600
+
+  # Si true, intenta usar la API de MythicMobs por reflexion.
+  # No requiere dependencia de MythicMobs al compilar.
+  use-mythic-api: true
+
+leveling:
+  enabled: true
+  # Distribucion global si el spawner no tiene una propia.
+  distribution:
+    '1-3': 50
+    '4-6': 30
+    '7-8': 15
+    '9-10': 5

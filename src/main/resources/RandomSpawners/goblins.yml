@@ -1,0 +1,55 @@
+# ==========================================================
+# Ejemplo de RandomSpawners para MDVSpawns.
+# Todos los .yml dentro de /plugins/MDVSpawns/RandomSpawners/ se cargan.
+#
+# chance acepta 2 formatos:
+#   chance: 0.03  -> 3% estilo MythicMobs antiguo
+#   chance: 3     -> 3%
+# ==========================================================
+
+GoblinPeonBosque:
+  enabled: true
+  mythicmob: GoblinPeon
+  chance: 0.04
+  group-size: 1-2
+
+  worlds:
+    - world
+
+  search-mode: SURFACE
+  min-y: 46
+  max-y: 140
+
+  min-distance-from-player: 36
+  max-distance-from-player: 72
+  vertical-range: 20
+
+  max-per-player: -1
+  max-per-chunk: -1
+  max-nearby:
+    radius: 48
+    amount: 6
+
+  biomes:
+    - FOREST
+    - DARK_FOREST
+    - TAIGA
+    - OLD_GROWTH_PINE_TAIGA
+    - OLD_GROWTH_SPRUCE_TAIGA
+    - PLAINS
+
+  blocks:
+    - GRASS_BLOCK
+    - PODZOL
+    - DIRT
+    - COARSE_DIRT
+    - ROOTED_DIRT
+    - MOSS_BLOCK
+
+  level:
+    enabled: true
+    distribution:
+      '1-3': 50
+      '4-6': 30
+      '7-8': 15
+      '9-10': 5

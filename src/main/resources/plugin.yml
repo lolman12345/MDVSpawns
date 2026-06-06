@@ -1,0 +1,16 @@
+name: MDVSpawns
+version: 1.0.0
+main: com.mdvcraft.mdvspawns.MDVSpawnsPlugin
+api-version: '1.21'
+author: MDVCraft
+softdepend: [MythicMobs]
+description: Controlled MythicMobs random spawns for MDVCraft
+commands:
+  mdvspawns:
+    description: MDVSpawns commands
+    usage: /mdvspawns <reload|debug|count|force>
+    aliases: [mdvspawn]
+permissions:
+  mdvspawns.admin:
+    description: Allows admin commands for MDVSpawns
+    default: op
